@@ -1,0 +1,521 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.clearfix::before,
+.clearfix::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+a,
+p {
+    text-decoration: none;
+    /* 메인 폰트 */
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    /*main color */
+    color: #fff;
+}
+a, p, h1, h2, h3, h4, h5, h6{
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+ol, ul {
+    list-style: none;
+    text-align: center
+}
+
+/* common */
+i.fas{
+    display: none;
+}
+body{
+    overflow-x:  hidden;
+}
+.kakao{
+    position: fixed;
+    bottom: 50px; right: 50px;
+    width: 50px;
+    z-index: 55;
+    transition: 0.8s;
+}
+.kakao:hover{
+    filter: drop-shadow(0 5px 10px gray);
+}
+
+/********* p1 *********/
+.p1{
+    width: 100%;
+    height: 700px;
+    background: #163439;
+}
+
+/* header */
+header{
+    margin: 0 auto;
+    width: 58.3%;
+    height: 100px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    /* background: red; */
+}
+header h3{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+header #name{
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: 300;
+}
+.profile{
+    width: 35px;
+    height: auto;
+}
+
+/* gnb */
+.nav_bar ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_bar ul li{
+    margin-left: 40px;
+    font-size: 17px;
+    font-weight: 500;
+    display: inline-block;
+}
+.nav_bar ul li a{
+    color: #fff;
+}
+/* 네비 호버 이벤트 */
+.nav_bar ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    border-radius: 25px;
+    background: #DC6D56;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav_bar ul li a:hover::after{
+    width: 100%;
+    
+}
+.nav_bar ul li a:hover{
+    color: #DC6D56;
+}
+
+.p1_main_img{
+    width: 50%;
+    height: 600px;
+    position: relative;
+    margin: 0 auto;
+}
+.p1_main_img article{
+    position: absolute;
+    z-index: 5;
+    top: 150px;
+}
+.p1_main_img article p{
+    font-size: 60px;
+    line-height: 80px;
+    letter-spacing: 0.5%;
+    font-weight: lighter;
+}
+.p1_main_img article p span{
+    font-weight: 700;
+}
+.p1_main_img article .guide{
+    width: 200px;
+    height: 55px;
+    border: 1px solid #DC6D56;
+    border-radius: 20px;
+    box-sizing: border-box;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #DC6D56;
+    margin-top: 40px;
+    transition: 1s;
+}
+.p1_main_img article .guide:hover{
+    background: #DC6D56;
+    color: #fff;
+}
+.p1_main_img .app{
+    width: 420px;
+    position: absolute;
+    right: 0; bottom : -150px;
+}
+.p1_main_img .logo{
+    width: 350px;
+    position: absolute;
+    right: -560px; bottom: -50px;
+}
+
+/********** p2 *********/
+.p2{
+    width: 100%;
+    height: 1200px;
+    padding-top: 200px;
+    background: #fff;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.p2 article{
+    width: 900px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+.p2 article h4, .p2 article p{
+    font-size: 20px;
+    color: #555;
+    font-weight: 200;
+}
+.p2 article p > span{
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+    margin-left: 20px;
+}
+.p2 article p span span{
+    color: yellow;
+    margin-right: 2.5px;
+}
+/* 후기 이미지 슬라이드 */
+.p2 .review_slide{
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    margin-top: 100px;
+}
+.p2 .review_slide ul{
+    width: 300%;
+    height: 100%;
+    left: 0;
+    position: relative;
+    overflow: hidden;
+}
+.p2 .review_slide ul li{
+    float: left;
+    width: 380px;
+    height: 600px;
+    box-sizing: border-box;
+    /* padding: 20px; */
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.p2 .review_slide ul li img{
+    width: 350px;
+    height: 500px;
+}
+
+
+/********** p3 *********/
+.p3{
+    width: 100%;
+    height: 3000px;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+}
+.p3 h3{
+    font-size: 40px;
+    font-weight: 300;
+    margin: 150px 0;
+}
+.p3 h3 span{
+    color: #DC6D56;
+}
+.p3 > div{
+    width: 58.3%;
+    height: 2400px;
+    /* background: pink; */
+}
+.p3 div ul li{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.p3 div ul li div, .p3 div ul li article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+.p3 div ul li:nth-child(2n-1) div{
+    width: 40.6%;
+    height: 600px;
+    /* background: lightblue; */
+}
+.p3 div ul li:nth-child(2n-1) article{
+    width: 59.3%;
+    height: 600px;
+    /* background: coral; */
+}
+.p3 div ul li:nth-child(2n) article{
+    width: 59.3%;
+    height: 600px;
+    /* background: coral; */
+}
+.p3 div ul li:nth-child(2n) div{
+    width: 40.6%;
+    height: 600px;
+    /* background: lightblue; */
+}
+
+/* img 커스텀 */
+.install{
+    width: 300px;
+    height: auto;
+}
+.autodoor{
+    width: 400px;
+    height: auto;
+}
+.motion{
+    width: 350px;
+    height: auto;
+}
+.control{
+    width: 320px;
+    height: auto;
+}
+
+/* 설명 커스텀 */
+.p3 div ul li article > *{
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: black;
+}
+.p3 div ul li article h4{
+    font-size: 30px;
+}
+.p3 div ul li article p:nth-child(2){
+    font-size: 17px;
+    margin: 30px 0;
+}
+.p3 div ul li article p:nth-child(3){
+    font-size: 12px;
+    line-height: 20px;
+}
+
+/********* p4 *********/
+.p4{
+    width: 100%;
+    height: 1800px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+}
+.p4 h3{
+    font-size: 40px;
+    font-weight: 300;
+    margin: 150px 0;
+}
+.p4 > div{
+    width: 58.3%;
+    margin-top: 100px;
+}
+.p4 div ul li{
+    float: left;
+    width: 50%;
+}
+.p4 div ul li img{
+    text-align: center;
+    width: 160px;
+}
+
+/********* p5 *********/
+.p5{
+    width: 100%;
+    height: 1100px;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    position: relative;
+}
+.p5 h3{
+    font-size: 40px;
+    font-weight: 300;
+    margin-top: 200px;
+    color: #DC6D56;
+}
+/* 질문 커스텀 */
+.p5 ul.question{
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    margin-top: 50px;
+}
+.p5 ul.question li{
+    width: 780px;
+    height: 50px;
+    border: 2px solid #DC6D56;
+    border-radius: 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+.p5 ul.question li p{
+    color: #DC6D56; 
+    font-size: 17px;
+}
+.p5 ul.question li img{
+    width: 15px;
+    cursor: pointer;
+}
+.p5 .more{
+    width: 100px;
+    height: 35px;
+    border: 2px solid #DC6D56;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    font-size: 12px;
+    color: #DC6D56;
+    margin-top: 30px;
+    transition: 1s;
+}
+.p5 .more:hover{
+    background: #DC6D56;
+    color: #fff;
+}
+.p5 .more img{
+    width: 12px;
+    rotate: -90deg;
+    transition: 1s;
+}
+.p5 .more:hover img{
+    color: #fff;
+}
+
+/* 대답 커스텀 */
+.answer li.a_list{
+    z-index: 50;
+    width: 700px;
+    height: 350px;
+    border-radius: 25px;
+    filter: drop-shadow(0 5px 25px rgba(0,0,0,0.5));
+    background: #fff;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+.answer li p:last-child{
+    font-size: 17px;
+    text-align: left;
+    line-height: 30px;
+    margin-left: 25px;
+    margin-top: 25px;
+    color: #DC6D56;
+}
+.answer li p:first-child{
+    text-align: right;
+    color: #DC6D56;
+    margin: 25px;
+    cursor: pointer;
+}
+
+/********* footer **********/
+footer{
+    width: 100%;
+    height: 300px;
+    background: #2f2f2f;
+}
+footer > div{
+    width: 58.3%;
+    height: 100%;
+    /* background: pink; */
+    margin: 0 auto;
+}
+footer div > ul{
+    height: 100%;
+}
+footer div > ul > li{
+    float: left;
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+}
+footer div > ul li:first-child{
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+footer div > ul li:first-child p{
+    margin-top: 60px;
+}
+footer div > ul li:first-child p:first-child{
+    font-size: 15px;
+}
+footer div > ul li:first-child p:nth-child(2){
+    font-size: 25px;
+    margin-top: 30px;
+}
+footer div > ul li:first-child p:last-child{
+    font-size: 13px;
+    margin-top: 30px;
+}
+footer div > ul li:nth-child(2){
+    align-items: center;
+    justify-content: flex-end;
+}
+footer div > ul li:nth-child(2) h6{
+    margin: 30px 0;
+    font-size: 10px;
+    color: #dedede;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+footer div > ul li:nth-child(2) img{
+    width: 150px;
+    opacity: 0.5;
+}
+footer div > ul li:last-child{
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+footer div > ul li:last-child h3{
+    font-size: 30px;
+    color: #fff;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+footer div > ul li:last-child ul{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-end;
+}
+footer div > ul li:last-child ul li{
+    float: right;
+    font-size: 10px;
+    font-weight: 300;
+    color: #dedede;
+    margin-bottom: 10px;
+}

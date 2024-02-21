@@ -9,7 +9,7 @@
         height: 70px;
         margin: 0 auto;
     }
-    header #name{
+    header .name{
         margin-left: 10px;
         font-size: 8px;
     }

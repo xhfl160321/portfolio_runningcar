@@ -73,6 +73,7 @@ header .name{
     margin-left: 20px;
     font-size: 15px;
     font-weight: 300;
+    color: #fff;
 }
 .profile{
     width: 35px;
@@ -519,4 +520,83 @@ footer div > ul li:last-child ul li{
     font-weight: 300;
     color: #dedede;
     margin-bottom: 10px;
+}
+
+/* login */
+.login{
+    width: 350px;
+    height: 500px;
+    background: rgba(222,222,222, 0.6);
+    border: 2px solid #DC6D56;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 56;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+.login > p{
+    width: 70%;
+    font-size: 20px;
+    text-align: right;
+    /* margin: 5%; */
+    color: black;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.login .logo_img{
+    width: 70%;
+    height: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: pink; */
+}
+.login .logo_img img{
+    width: 70%;
+    height: auto;
+}
+
+.login .login_form{
+    width: 70%;
+    height: 22%;
+    /* background: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: column wrap;
+}
+/* .login .login_form form{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    height: 100%;
+
+}*/
+.login .login_form input{
+    box-sizing: border-box;
+}
+.login .login_form input.id{
+    width: 80%;
+    height: 25px;
+}
+.login .login_form input.password{
+    width: 95%;
+    height: 25px;
+}
+.login .login_form button{
+    width: 85px;
+    height: 30px;
+    background: #163439;
+    color: #f2f2f2;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #fff;
+    margin: 0 auto;
 }

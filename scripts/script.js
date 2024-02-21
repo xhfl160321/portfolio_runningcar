@@ -5,12 +5,49 @@ var navBtnhide = $("i.fas.fa-xmark");
 
 navBtnShow.click(function () {
     navBar.css({ "right": "0" });
-    console.log("menu show");
+    // console.log("menu show");
 });
 
 navBtnhide.click(function () {
     navBar.css({ "right": "-200px" });
-    console.log("menu hide");
+    // console.log("menu hide");
+});
+
+// 로그인 이벤트
+const xBtnLogin = $(".login p");
+const loginBtn = $("header img.profile");
+const loginForm = $(".login")
+
+
+loginBtn.click(function(){
+    loginForm.show();
+})
+
+xBtnLogin.click(function(){
+    loginForm.hide();
+});
+
+// 입력 받은 로그인 아이디 출력하기
+const submitBtn = $("#submit");
+
+// submitBtn.click(function(){
+//     const userId = $(".login_form #id").value;
+//     const result = $(".result");
+
+//     result.innerHTML = userId;
+// });
+
+submitBtn.click(function() {
+    const userId = document.querySelector('.id').value;
+    const result = document.querySelector('header .result');
+
+    console.log(userId);
+  
+    // OR 연산자 처리
+    const resultText = userId || 1;
+    result.innerHTML = resultText;
+
+    loginForm.hide();
 });
 
 // 이미지 슬라이드
@@ -29,7 +66,7 @@ function slideFun() {
     }
 }
 
-// 양 끝 이미지 복사
+// 리뷰 슬라이드 양 끝 이미지 복사
 const lastIndex = slideImg.length -1;
 
 function cloneElement(){
@@ -68,7 +105,7 @@ qBtn.each(function(index, obj){
     target.click(function(e){
         e.preventDefault();
 
-        console.log(index, obj,"!!button click");
+        // console.log(index, obj,"!!button click");
 
         target.removeClass("active");
         target.addClass("active");
@@ -86,12 +123,12 @@ var navBtnhide = $("i.fas.fa-xmark");
 // media query 시 작동되는 메뉴 이벤트
 navBtnShow.click(function () {
     navBar.css({ "right": "0" });
-    console.log("menu show");
+    // console.log("menu show");
 });
 
 navBtnhide.click(function () {
     navBar.css({ "right": "-200px" });
-    console.log("menu hide");
+    // console.log("menu hide");
 });
 
 

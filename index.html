@@ -19,7 +19,7 @@
         <header>
             <h3>
                 <a href="index.html"><img src="img/프로필.png" alt="프로필" class="profile"></a>
-                <p class="name">로그인</p>
+                <div class="name result">로그인</div>
             </h3>
             <nav class="nav_bar" id="nav_bar">
                 <i class="fas fa-xmark"></i>
@@ -204,6 +204,20 @@
             </ul>
         </div>
     </footer>
+
+    <div class="login">
+        <p>✖</p>
+        <div class="logo_img">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <div class="login_form">
+            
+                <input type="id" name="id" id="id" class="id" placeholder="아이디를 입력해주세요." required>
+                <input type="password" name="password" class="password" placeholder="비밀번호를 입력해주세요." required>
+                <button type="submit" id="submit">로그인</button>
+            
+        </div>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="scripts/script.js"></script>

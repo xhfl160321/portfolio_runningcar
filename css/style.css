@@ -36,7 +36,7 @@ body{
 }
 .kakao{
     position: fixed;
-    bottom: 50px; right: 50px;
+    bottom: 5%; right: 5%;
     width: 50px;
     z-index: 55;
     transition: 0.8s;
@@ -260,22 +260,22 @@ header #name{
     align-items: center;
     flex-flow: column wrap;
 }
-.p3 div ul li:nth-child(2n-1) div{
+.p3 div ul li  div{
     width: 40.6%;
     height: 600px;
     /* background: lightblue; */
 }
-.p3 div ul li:nth-child(2n-1) article{
+.p3 div ul li article{
     width: 59.3%;
     height: 600px;
     /* background: coral; */
 }
-.p3 div ul li:nth-child(2n) article{
+.p3 div ul li  article{
     width: 59.3%;
     height: 600px;
     /* background: coral; */
 }
-.p3 div ul li:nth-child(2n) div{
+.p3 div ul li div{
     width: 40.6%;
     height: 600px;
     /* background: lightblue; */
@@ -420,6 +420,7 @@ header #name{
     z-index: 50;
     width: 700px;
     height: 350px;
+    border: 2px solid #DC6D56;
     border-radius: 25px;
     filter: drop-shadow(0 5px 25px rgba(0,0,0,0.5));
     background: #fff;

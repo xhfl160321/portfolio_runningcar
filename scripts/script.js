@@ -50,6 +50,12 @@ submitBtn.click(function() {
     loginForm.hide();
 });
 
+$(document).mouseup(function (e) {
+    if (loginForm.has(e.target).length === 0) {
+        loginForm.hide();
+    }
+});
+
 // 이미지 슬라이드
 const slideList = $(".review_slide ul");
 const slideImg = $(".review_slide ul li");

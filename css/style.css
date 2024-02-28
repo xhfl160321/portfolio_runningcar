@@ -526,7 +526,7 @@ footer div > ul li:last-child ul li{
 .login{
     width: 350px;
     height: 500px;
-    background: rgba(222,222,222, 0.6);
+    background: rgba(222,222,222, 0.9);
     border: 2px solid #DC6D56;
     border-radius: 25px;
     position: absolute;
@@ -549,10 +549,11 @@ footer div > ul li:last-child ul li{
 }
 .login .logo_img{
     width: 70%;
-    height: 45%;
+    height: 35%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10%;
     /* background: pink; */
 }
 .login .logo_img img{
@@ -580,14 +581,22 @@ footer div > ul li:last-child ul li{
 }*/
 .login .login_form input{
     box-sizing: border-box;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #DC6D56;
+    background: none;
+}
+.login .login_form input::placeholder{
+    color: #DC6D56;
 }
 .login .login_form input.id{
     width: 80%;
-    height: 25px;
+    height: 28px;
 }
 .login .login_form input.password{
     width: 95%;
-    height: 25px;
+    height: 28px;
 }
 .login .login_form button{
     width: 85px;
@@ -599,4 +608,6 @@ footer div > ul li:last-child ul li{
     font-size: 14px;
     color: #fff;
     margin: 0 auto;
+    margin-top: 10px;
+    cursor: pointer;
 }
